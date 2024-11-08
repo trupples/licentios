@@ -6,7 +6,7 @@ import subprocess
 import re
 import yaml
 
-source_files = [q.decode() for q in subprocess.check_output("git ls-files", shell=True, cwd='linuxmount/').splitlines()]
+source_files = [q.decode() for q in subprocess.check_output("git ls-files", shell=True, cwd='linux/').splitlines()]
 
 def firstcomment(filename):
     comment = ''
